@@ -103,3 +103,8 @@ DELETE `/leads/:id`
 # Author
 
 Shalini Verma
+
+# Screenshots
+
+## Dashboard
+![Dashboard](dashboard.png)
