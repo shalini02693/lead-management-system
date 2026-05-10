@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dashboard-card {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.dashboard-card h3 {
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.total {
+  background: #1976d2;
+}
+
+.interested {
+  background: #0288d1;
+}
+
+.converted {
+  background: #2e7d32;
+}
+
+.not-interested {
+  background: #d32f2f;
+}
+
+/* Messages */
+
+.error {
+  color: #d32f2f;
+  background: #fdecea;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.success {
+  color: #2e7d32;
+  background: #edf7ed;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Form */
+
+.lead-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.lead-form input,
+.lead-form select {
+  flex: 1;
+}
+
+.lead-form button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.lead-form button:hover {
+  background: #1259a7;
+}
+
+/* Filters */
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+/* Lead Cards */
+
+.lead-list {
+  display: grid;
+  gap: 15px;
+}
+
+.lead-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.lead-card h3 {
+  margin-top: 0;
+}
+
+.lead-card select {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.delete-btn {
+  margin-top: 12px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lead-form {
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}

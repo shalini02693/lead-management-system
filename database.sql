@@ -1,0 +1,8 @@
+CREATE TABLE leads (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    phone VARCHAR(20) NOT NULL UNIQUE,
+    source VARCHAR(20) NOT NULL,
+    status VARCHAR(30) DEFAULT 'Interested',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
